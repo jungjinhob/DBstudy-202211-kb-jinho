@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `course_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.course_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.course_mst:~7 rows (대략적) 내보내기
 DELETE FROM `course_mst`;
 INSERT INTO `course_mst` (`id`, `subject_id`, `student_id`, `status_id`) VALUES
 	(1, 1, 1, 1),
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `emp_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.emp_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.emp_mst:~4 rows (대략적) 내보내기
 DELETE FROM `emp_mst`;
 INSERT INTO `emp_mst` (`id`, `name`) VALUES
 	(1, '문성현'),
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `status_mst` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.status_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.status_mst:~2 rows (대략적) 내보내기
 DELETE FROM `status_mst`;
 INSERT INTO `status_mst` (`id`, `name`) VALUES
 	(1, '수강'),
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `student_dtl` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.student_dtl:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.student_dtl:~5 rows (대략적) 내보내기
 DELETE FROM `student_dtl`;
 INSERT INTO `student_dtl` (`id`, `emp_id`) VALUES
 	(1, 1),
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `student_mst` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.student_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.student_mst:~5 rows (대략적) 내보내기
 DELETE FROM `student_mst`;
 INSERT INTO `student_mst` (`id`, `name`) VALUES
 	(1, '신경수'),
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `subject_mst` (
   UNIQUE KEY `subject` (`subject`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 테이블 데이터 db_study2.subject_mst:~3 rows (대략적) 내보내기
+-- 테이블 데이터 db_study2.subject_mst:~4 rows (대략적) 내보내기
 DELETE FROM `subject_mst`;
 INSERT INTO `subject_mst` (`id`, `subject`) VALUES
 	(3, 'c'),
