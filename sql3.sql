@@ -27,7 +27,7 @@ ORDER BY
 SELECT
 	
 	nm.title,
-	nm.content,
+	nm.content,db_study2
 	ni.img_name,
 	wm.name
 FROM
